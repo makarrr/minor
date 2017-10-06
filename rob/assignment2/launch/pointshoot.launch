@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+	<group ns="assignment2">
+		<node pkg="stage_ros" type="stageros" name="stageros" args="$(find assignment2)/world/empty.world"/>
+		<node pkg="assignment2" name="pointshoot_node" type="pointshoot_node" output="screen"/>
+    </group>
+</launch>
